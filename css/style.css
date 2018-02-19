@@ -6,6 +6,7 @@ html, body, div, span, applet, object, h1, h2, h3, h4, h5, h6, p, blockquote, pr
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+	color: #484848;
 }
 
 body{
@@ -120,7 +121,121 @@ a{
 	background-color: #f44066;
 }
 
+.pad{
+	padding: 5em 0;
+}
 
+.container{
+	width: 50.8em;
+	max-width: 1680px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #80808017;
+	/*height: 400px; /*a effacer*/
+	display: flex;
+}
+.row{
+	width: 50%;
+	
+	background-color: #80808017;
+}
+
+#sect1 h2{
+	font-size: 44px;
+	font-weight: bold;
+	text-transform: uppercase;
+	line-height: 60px;
+}
+
+#sect1 .container .row{
+	margin-right: 56px;
+}
+#sect1 .container> .row:nth-of-type(odd){
+	font-size: 25px;
+	text-transform: uppercase;
+	line-height: 40px;
+}
+#sect1  .container> .row:nth-of-type(even){
+	margin-right: 0;
+	font-size: 15px;
+}
+#plight{
+	color: #aaa
+}
+
+.pset p{
+	margin-bottom: 20px;
+	font-size: 14px;
+	line-height: 28px;
+}
+
+#sect2{
+	background-color: #f6f6f6;
+}
+
+.pic-head{
+	width: 100%;
+	text-transform: uppercase;
+	text-align: center;
+	line-height: 60px;
+}
+.pic-head h2{
+	font-size: 44px;
+	font-weight: bold;
+}
+
+.pic-head p{
+	font-size: 26px;
+	color: #aaa;
+}
+
+#sect2 > .container:nth-of-type(1){
+	margin-bottom: 6em;
+}
+
+#sect2 > .container:nth-of-type(2){
+	width: 67.8em;
+}
+
+.pic-frame h3{
+	display: block;
+	box-shadow: 0px 0.0375em 0.125em 0px rgba(0, 0, 0, 0.15);
+	background-color: #fff;
+	padding: 2em 1em;
+	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+	text-transform: uppercase;
+
+}
+
+
+#plage, #capt-plage{
+	width: 98%;
+}
+
+#capt-plage{
+	float: left;
+}
+
+#jungle{
+	margin-left: 33px;
+	
+}
+#capt-jungle{
+	float: right;
+	margin-right: 3px;
+}
+
+
+#jungle, #capt-jungle{
+	width: 94%;
+}
+
+
+#capt-plage, #capt-jungle{
+	margin-top: -11px;
+}
 
 
 
