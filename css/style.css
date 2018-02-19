@@ -1,0 +1,89 @@
+
+html, body, div, span, applet, object, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+body{
+	background-color: #fff;
+	color: #666;
+}
+
+body, input, select, textarea {
+	font-family: "Raleway", Arial, Helvetica, sans-serif;
+	font-size: 13pt;
+	font-weight: 400;
+	line-height: 2em;
+}
+
+.land{
+	padding-top: O !important;
+}
+
+header{
+	display: block;
+	position: absolute;
+	width: 100%;
+	background-color: transparent;
+	height: 3.25em;
+	font-size: 19px;
+	line-height: 3.25em;
+	color: #484848;
+
+}
+header h1{
+	color: #fff;
+	position: absolute;
+	left: 2.5em
+}
+header h1 a{
+	color: #fff;
+
+}
+ul{
+	list-style-type: none;
+
+}
+
+.nav-header{
+	right:2em;
+	position: absolute;
+	text-transform: uppercase;
+}
+.nav-header h1{
+	
+}
+.nav-header,  header h1{
+	top: 2em;
+
+}
+
+.nav-header ul li{
+	display: inline-block;
+	margin-left: 2.3em;
+	padding-left: 0;
+	border-radius: 4px;
+	font-size: 19px;
+}
+
+.nav-header ul li a{
+	color: #ddd;
+	
+}
+
+a{
+	text-decoration: none;
+}
+
+#banner{
+	padding: 16em 0 13em 0;
+	background-image: url("../images/overlay.png"), url("../images/banner.jpg");
+	background-attachment: fixed;
+	background-size: cover;
+	text-align: center;
+	line-height: 1.75;
+}
