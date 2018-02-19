@@ -11,6 +11,7 @@ html, body, div, span, applet, object, h1, h2, h3, h4, h5, h6, p, blockquote, pr
 body{
 	background-color: #fff;
 	color: #666;
+	height: 1000px; /* a effacer*/
 }
 
 body, input, select, textarea {
@@ -20,9 +21,7 @@ body, input, select, textarea {
 	line-height: 2em;
 }
 
-.land{
-	padding-top: O !important;
-}
+
 
 header{
 	display: block;
@@ -42,6 +41,7 @@ header h1{
 }
 header h1 a{
 	color: #fff;
+	font-weight: bold;
 
 }
 ul{
@@ -58,7 +58,7 @@ ul{
 	
 }
 .nav-header,  header h1{
-	top: 2em;
+	top: 38px;
 
 }
 
@@ -72,6 +72,7 @@ ul{
 
 .nav-header ul li a{
 	color: #ddd;
+
 	
 }
 
@@ -80,10 +81,49 @@ a{
 }
 
 #banner{
-	padding: 16em 0 13em 0;
+	padding: 14em 0 13em 0;
 	background-image: url("../images/overlay.png"), url("../images/banner.jpg");
 	background-attachment: fixed;
 	background-size: cover;
 	text-align: center;
 	line-height: 1.75;
+	text-transform: uppercase;
 }
+
+#banner h2{
+	color: #fff;
+	font-size: 52px;
+	line-height: 1.35;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+#banner p{
+	color: #aaa;
+	font-size: 22px;
+	margin-bottom: 1.75em;
+
+}
+#red-button{
+	background-color: #f32853;
+	margin: 0 42%;
+	padding: 12px;
+	border-radius: 4px;
+}
+
+#red-button a{
+	color: #fff;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+#red-button:hover{
+	background-color: #f44066;
+}
+
+
+
+
+
+
+
+
