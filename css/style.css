@@ -209,6 +209,9 @@ a{
 
 }
 
+#plage{
+	height: 77%
+}
 
 #plage, #capt-plage{
 	width: 98%;
@@ -237,7 +240,38 @@ a{
 	margin-top: -11px;
 }
 
+#sect2 > .container:nth-of-type(3){
+	width: 35%;
+	display: flex;
+	
+}
 
+.red-btn, .dark-btn{
+	width: 100%;
+	margin: 40px 17px 40px 0px;
+	padding:15px 0 10px 40px;
+	border-radius: 4px;
+}
+
+.dark-btn{
+	background-color: #333;
+}
+
+.red-btn{
+	background-color: #f32853;
+
+}
+
+.red-btn a, .dark-btn a{
+	color: #fff;
+	font-size: 20px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.red-btn:hover, .dark-btn:hover{
+	background-color: #f44066;
+}
 
 
 
