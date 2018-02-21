@@ -1,4 +1,5 @@
 
+@import url(font-awesome.min.css);
 html, body, div, span, applet, object, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, section, summary, time, mark, audio, video {
 	margin: 0;
 	padding: 0;
@@ -7,6 +8,10 @@ html, body, div, span, applet, object, h1, h2, h3, h4, h5, h6, p, blockquote, pr
 	font: inherit;
 	vertical-align: baseline;
 	color: #484848;
+	transition: all 1.5s ease;
+}
+html {
+    scroll-behavior: smooth;
 }
 
 body{
@@ -22,7 +27,9 @@ body, input, select, textarea {
 	line-height: 2em;
 }
 
-
+div{
+	transition: all 1s ease;
+}
 
 header{
 	display: block;
@@ -73,16 +80,22 @@ ul{
 
 .nav-header ul li a{
 	color: #ddd;
+}
 
-	
+.nav-header ul li a:hover{
+	color: #fff;
 }
 
 a{
 	text-decoration: none;
+	
 }
 
-#banner{
-	padding: 14em 0 13em 0;
+a:hover{
+	
+}
+
+#banner, #sect4{
 	background-image: url("../images/overlay.png"), url("../images/banner.jpg");
 	background-attachment: fixed;
 	background-size: cover;
@@ -91,14 +104,19 @@ a{
 	text-transform: uppercase;
 }
 
-#banner h2{
+#banner{
+	padding: 14em 0 13em 0;
+	
+}
+
+#banner h2, #sect4 h2{
 	color: #fff;
 	font-size: 52px;
 	line-height: 1.35;
 	font-weight: bold;
 	margin-bottom: 20px;
 }
-#banner p{
+#banner p, #sect4 p{
 	color: #aaa;
 	font-size: 22px;
 	margin-bottom: 1.75em;
@@ -130,14 +148,14 @@ a{
 	max-width: 1680px;
 	margin-left: auto;
 	margin-right: auto;
-	background-color: #80808017;
+	/*background-color: #80808017;*/
 	/*height: 400px; /*a effacer*/
 	display: flex;
 }
 .row{
 	width: 50%;
 	
-	background-color: #80808017;
+	/*background-color: #80808017;*/
 }
 
 #sect1 h2{
@@ -170,21 +188,22 @@ a{
 }
 
 #sect2{
-	background-color: #f6f6f6;
+	/*background-color: #f6f6f6;*/
 }
 
-.pic-head{
+
+.sect-head{
 	width: 100%;
 	text-transform: uppercase;
 	text-align: center;
 	line-height: 60px;
 }
-.pic-head h2{
+.sect-head h2{
 	font-size: 44px;
 	font-weight: bold;
 }
 
-.pic-head p{
+.sect-head p{
 	font-size: 26px;
 	color: #aaa;
 }
@@ -272,6 +291,189 @@ a{
 .red-btn:hover, .dark-btn:hover{
 	background-color: #f44066;
 }
+
+#sect3{
+	display: inline-block;
+}
+
+#sect3 .sect-head{
+	text-align: left;
+	margin: 0 0 6em 0;
+}
+
+#sect3 .container{
+	width: 82%;
+	display: block;
+	/*background-color: green;*/
+}
+
+.grid-container{
+	position: relative;
+	/*background-color: aliceblue;*/
+}
+
+.grid{
+	display: inline-block;
+	float: left;
+	width: 50%;
+	margin-bottom: 3em;
+}
+.desc{
+	width: 60%;
+}
+.desc h4{
+	font-size: 18px;
+	line-height: 60px;
+	font-weight: bold;
+}
+
+.desc header{
+	position: relative;
+	text-transform: uppercase;
+	margin-bottom: 40px;
+}
+.desc header p{
+	font-size: 0.9em;
+	margin-top: -0.6em;
+	line-height: 1.5em;
+	color: #aaa;
+}
+
+.desc header p, .content{
+	font-size: 14px;
+}
+
+.content{
+	/*margin: 0 0 2em 0;*/
+	
+}
+
+.rounded{
+	width: 26%;
+}
+
+.rounded img{
+	border-radius: 50%;
+	display: inline;
+	position: relative;
+	border: solid 0.5em rgba(144, 144, 144, 0.25);
+	max-width: 100%;
+
+}
+
+
+.grid-container .grid:nth-child(odd) .desc, .grid-container .grid:nth-child(odd) .rounded{
+	float: right;
+	margin-right: 5%;
+	text-align: right;
+}
+
+.grid-container .grid:nth-child(even) .desc, .grid-container .grid:nth-child(even) .rounded{
+	float: left;
+	margin-left: 5%;
+	text-align: left;
+}
+
+
+#sect4{
+	height: 420px;
+}
+
+#sect4 .container{
+	display: block;
+	padding-top: 100px
+
+}
+
+#sect4 h2{
+	font-size: 42px;
+}
+
+#sect4 p{
+	font-size: 25px;
+}
+
+footer{
+	padding: 100px 0;
+}
+
+.icons{
+	width: 15%;
+	
+	
+}
+.icons div{
+	padding-right: 27%;
+}
+
+footer a{
+	font-family: FontAwesome;
+	font-size: 42px;
+	font-weight: normal;
+	color: #aaa;
+	text-transform: none !important;
+}
+
+footer a:hover{
+	color: #666;
+}
+
+#fb a::before{
+	content: '\f09a';
+}
+
+
+#twt a::before{
+	content: '\f099';
+}
+
+#ins a::before{
+	content: '\f16d';
+}
+
+.copyright, .copyright a{
+	font-size: 15px;
+	font-family: "Raleway", Arial, Helvetica, sans-serif;
+}
+
+.copyright{
+	width: 35%;
+	padding: 50px 0;
+
+}
+.copyright div{
+	padding: 0 32px;
+	color: #aaa;
+}
+
+.copyright div:nth-child(even){
+	border-right: 1px solid rgba(144, 144, 144, 0.25);
+	border-left:  1px solid rgba(144, 144, 144, 0.25);
+}
+
+#settings{
+	display: block;
+	position: fixed;
+	right:0;
+	top: 50%;
+	width: 50px;
+	height: 40px;
+	background-color:#fff;
+	box-shadow: 0px 3px 20px 0px rgba(100, 0, 0, 0.7);
+	border-radius: 50%;
+	text-align: center;
+}
+
+#settings h2{
+	color: #aaa;
+	text-shadow: 1px 2px #d8d2d0;
+}
+
+
+
+
+
+
 
 
 
