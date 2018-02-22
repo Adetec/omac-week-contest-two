@@ -4,7 +4,7 @@ html, body, div, span, applet, object, h1, h2, h3, h4, h5, h6, p, blockquote, pr
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
+	/*font-size: 100%;*/
 	font: inherit;
 	vertical-align: baseline;
 	color: #484848;
@@ -17,7 +17,7 @@ html {
 body{
 	background-color: #fff;
 	color: #666;
-	height: 1000px; /* a effacer*/
+	
 }
 
 body, input, select, textarea {
@@ -56,6 +56,11 @@ ul{
 	list-style-type: none;
 
 }
+
+
+
+
+
 
 .nav-header{
 	right:2em;
@@ -98,6 +103,7 @@ a:hover{
 #banner, #sect4{
 	background-image: url("../images/overlay.png"), url("../images/banner.jpg");
 	background-attachment: fixed;
+	background-position: top;
 	background-size: cover;
 	text-align: center;
 	line-height: 1.75;
@@ -145,11 +151,9 @@ a:hover{
 
 .container{
 	width: 50.8em;
-	max-width: 1680px;
+	max-width: 1440px;
 	margin-left: auto;
 	margin-right: auto;
-	/*background-color: #80808017;*/
-	/*height: 400px; /*a effacer*/
 	display: flex;
 }
 .row{
@@ -467,6 +471,59 @@ footer a:hover{
 #settings h2{
 	color: #aaa;
 	text-shadow: 1px 2px #d8d2d0;
+}
+
+
+
+
+
+
+
+@media(max-width:769px){
+	.nav-header ul{
+		display: grid;
+	}
+	#sect2 .container:nth-of-type(2){
+		display: block;
+		width: 100%;
+	}
+	#sect2 .container:nth-of-type(3){
+		display: inline-flex;
+		width: 100%;
+	}
+	#jungle{
+		width: 98%;
+		margin-left: 0;
+	}
+	
+	.container, .grid{
+		width: 100%;
+	}
+
+	#red-button{
+		margin: 0 20%;
+	}
+	.icons div{
+		margin: auto;
+		padding-right: 0;
+	}
+	header h1, .nav-headre{
+		position: initial;
+	}
+	.copyright div{
+		margin: auto;
+	}
+	#sect1 .container{
+		display: block;
+	}
+	#sect1 .container .row{
+		margin-right: 0;
+		width: 100%;
+	}
+	#sect4{
+		height: auto;
+	}
+	
 }
 
 
