@@ -164,7 +164,7 @@ a:hover{
 
 .container{
 	width: 50.8em;
-	max-width: 1440px;
+	/*max-width: 1440px;*/
 	margin-left: auto;
 	margin-right: auto;
 	display: flex;
@@ -311,6 +311,7 @@ a:hover{
 
 #sect3{
 	display: inline-block;
+	width: 100%;
 }
 
 #sect3 .sect-head{
@@ -319,7 +320,7 @@ a:hover{
 }
 
 #sect3 .container{
-	width: 82%;
+	width: 80%;
 	display: block;
 	/*background-color: green;*/
 }
@@ -336,7 +337,7 @@ a:hover{
 	margin-bottom: 3em;
 }
 .desc{
-	width: 60%;
+	width: 50%;
 }
 .desc h4{
 	font-size: 18px;
@@ -461,6 +462,7 @@ footer a:hover{
 .copyright div{
 	padding: 0 32px;
 	color: #aaa;
+	margin: auto;
 }
 
 .copyright div:nth-child(even){
@@ -474,16 +476,17 @@ footer a:hover{
 	right:0;
 	top: 50%;
 	width: 50px;
-	height: 40px;
-	background-color:#fff;
+	height: 68px;
+	background-color: transparent;
 	box-shadow: 0px 3px 20px 0px rgba(100, 0, 0, 0.7);
 	border-radius: 50%;
 	text-align: center;
 }
 
 #settings h2{
-	color: #aaa;
-	text-shadow: 1px 2px #d8d2d0;
+	color: #f32853;
+	text-shadow: 1px 1px #fff;
+	font-weight: bold;
 }
 
 
