@@ -26,16 +26,30 @@ function fade(){
 	console.log("it's faded");	
 }
 
-//changer le theme...
+const ids =["plage", "jungle", "pic04", "pic05", "pic06","pic07"];
+
+
+//changer le theme DUBAI...
 function changeTheme() {
-	
-	document.getElementsByTagName("link")[0].setAttribute("href", "css/mine.css");	
+	// var dubai = ["2-2","3-2","4-2","5-2","6-2","7-2"]
+	document.getElementsByTagName("link")[0].setAttribute("href", "css/mine.css");
+	var num =2;
+	for (var i = 0; i <= ids.length; i++) {
+		document.getElementById(ids[i]).setAttribute("src","images/pic0"+num+"-2.jpg");
+		num++;
+	}
 }
 
 //retablir l'original...
 
 function reset() {
 	document.getElementsByTagName("link")[0].setAttribute("href", "css/style.css");
+
+	var num =2;
+	for (var i = 0; i <= ids.length; i++) {
+		document.getElementById(ids[i]).setAttribute("src","images/pic0"+num+".jpg");
+		num++;
+	}
 
 }
 

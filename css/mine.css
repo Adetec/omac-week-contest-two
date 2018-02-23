@@ -133,7 +133,7 @@ a:hover{
 }
 
 #banner, #sect4{
-	background-image: url("../images/overlay.png"), url("https://www.oceaniacruises.com/Images/Region%20Slideshows/South%20Pacific/81604438601/Moorea-French-Polynesia.jpg");
+	background-image: url("../images/overlay.png"), url("../images/banner2.jpg");
 	background-attachment: fixed;
 	background-position: top;
 	background-size: cover;
