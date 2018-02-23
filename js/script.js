@@ -22,8 +22,21 @@ function scrollProg() {
 
 // charger la page progressievement...
 function fade(){
-	document.body.className += 'fadeIn';
+	document.body.className += 'fadeIn ';
 	console.log("it's faded");	
+}
+
+//changer le theme...
+function changeTheme() {
+	
+	document.getElementsByTagName("link")[0].setAttribute("href", "css/mine.css");	
+}
+
+//retablir l'original...
+
+function reset() {
+	document.getElementsByTagName("link")[0].setAttribute("href", "css/style.css");
+
 }
 
 
