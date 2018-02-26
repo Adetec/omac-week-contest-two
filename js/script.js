@@ -1,3 +1,43 @@
+
+
+var getCssLink = document.getElementsByTagName("link")[0];
+
+// document.body.onload = function(){
+// 	if (document.cookie.length != 0) {
+// 		var cssLinkValue = getCssLink.setAttribute("href", document.cookie[0]);
+// 		cssLinkValue;
+// 	}
+	
+// }
+
+
+// charger la page progressievement...
+function fade(){
+	
+	
+	if (document.cookie.length != 0) {
+		var cssLinkValue = getCssLink.setAttribute("href", document.cookie[0]);
+		console.log("this is "+ cssLinkValue);
+	}
+	else {
+		getCssLink.setAttribute("href","css/style.css");
+	}
+	document.body.className += 'fadeIn ';
+	console.log("it's faded");	
+}
+setThemeCookie();
+function setThemeCookie() {
+	
+	var selectedTheme = getCssLink.getAttribute("href");
+	console.log("Selected theme is "+selectedTheme);
+	if (selectedTheme == "css/mine.css") {
+		document.cookie = getCssLink.setAttribute("href", selectedTheme);
+		console.log(document.cookie+";max-age="+(60*60*24*30)+";");
+	}
+
+}
+
+
 // changer h1 à h6 en majiscule...
 
 function majiscule() {
@@ -20,11 +60,20 @@ function scrollProg() {
   document.getElementById("scrollPr").style.width = scrolled + "%";
 }
 
-// charger la page progressievement...
-function fade(){
-	document.body.className += 'fadeIn ';
-	console.log("it's faded");	
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 const ids =["plage", "jungle", "pic04", "pic05", "pic06","pic07"];
 
@@ -32,7 +81,7 @@ const ids =["plage", "jungle", "pic04", "pic05", "pic06","pic07"];
 //changer le theme DUBAI...
 function changeTheme() {
 	// var dubai = ["2-2","3-2","4-2","5-2","6-2","7-2"]
-	document.getElementsByTagName("link")[0].setAttribute("href", "css/mine.css");
+	getCssLink.setAttribute("href", "css/mine.css");
 	var num =2;
 	for (var i = 0; i <= ids.length; i++) {
 		document.getElementById(ids[i]).setAttribute("src","images/pic0"+num+"-2.jpg");
@@ -43,7 +92,7 @@ function changeTheme() {
 //retablir l'original...
 
 function reset() {
-	document.getElementsByTagName("link")[0].setAttribute("href", "css/style.css");
+	getCssLink.setAttribute("href", "css/style.css");
 
 	var num =2;
 	for (var i = 0; i <= ids.length; i++) {
