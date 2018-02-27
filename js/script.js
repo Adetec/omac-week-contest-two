@@ -15,9 +15,12 @@ function getThemeCookie(){
 	if (document.cookie.length!=0) {
 		var cssFileArr = document.cookie.split("=");
 		selectedTheme = cssFileArr[1];
-		getCssLink.setAttribute("href",selectedTheme)
+		getCssLink.setAttribute("href",selectedTheme);
+		
 	}
+
 }
+
 
 
 // charger la page progressievement...
@@ -28,7 +31,7 @@ function fade(){
 	document.body.className += 'fadeIn ';
 	console.log("it's faded");
 
-	
+
 }
 
 function setThemeCookie() {
