@@ -1,6 +1,7 @@
 
 
 var getCssLink = document.getElementsByTagName("link")[0];
+var selectedTheme = getCssLink.getAttribute("href");
 
 // document.body.onload = function(){
 // 	if (document.cookie.length != 0) {
@@ -10,38 +11,45 @@ var getCssLink = document.getElementsByTagName("link")[0];
 	
 // }
 
+function getThemeCookie(){
+	if (document.cookie.length!=0) {
+
+	}
+}
+
 
 // charger la page progressievement...
 function fade(){
 	
 	
-	if (document.cookie.length != 0) {
-		var cssLinkValue = getCssLink.setAttribute("href", document.cookie[0]);
-		console.log("this is "+ cssLinkValue);
-	}
-	else {
-		getCssLink.setAttribute("href","css/style.css");
-	}
 	document.body.className += 'fadeIn ';
 	console.log("it's faded");	
 }
-setThemeCookie();
+
 function setThemeCookie() {
 	
-	var selectedTheme = getCssLink.getAttribute("href");
+	
 	console.log("Selected theme is "+selectedTheme);
 	if (selectedTheme == "css/mine.css") {
-		document.cookie = getCssLink.setAttribute("href", selectedTheme);
-		console.log(document.cookie+";max-age="+(60*60*24*30)+";");
+		
+		document.cookie = "theme="+selectedTheme+";max-age="+(60*60*24*30)+";";
+		console.log(document.cookie);
 	}
-
+	else{
+		document.cookie = "theme="+selectedTheme+";max-age="+(60*60*24*30)+";";
+		console.log(document.cookie);
+	}
+	
+	
 }
+
+
 
 
 // changer h1 à h6 en majiscule...
 
 function majiscule() {
-	var arr = ['h1','h2','h3','h4','h5','h6'], maj, i;
+	var arr = ['h1','h2','h3','h4'], maj, i;
 	for (i = 0 ; i < arr.length; i++) {
 		maj= document.querySelector(arr[i]).style.textTransform= "uppercase";
 		console.log(maj);
@@ -82,8 +90,11 @@ const ids =["plage", "jungle", "pic04", "pic05", "pic06","pic07"];
 function changeTheme() {
 	// var dubai = ["2-2","3-2","4-2","5-2","6-2","7-2"]
 	getCssLink.setAttribute("href", "css/mine.css");
+	selectedTheme = getCssLink.getAttribute("href");
+	
+	setThemeCookie();
 	var num =2;
-	for (var i = 0; i <= ids.length; i++) {
+	for (var i = 0; i < ids.length; i++) {
 		document.getElementById(ids[i]).setAttribute("src","images/pic0"+num+"-2.jpg");
 		num++;
 	}
@@ -93,9 +104,11 @@ function changeTheme() {
 
 function reset() {
 	getCssLink.setAttribute("href", "css/style.css");
-
+	selectedTheme = getCssLink.getAttribute("href");
+	
+	setThemeCookie();
 	var num =2;
-	for (var i = 0; i <= ids.length; i++) {
+	for (var i = 0; i < ids.length; i++) {
 		document.getElementById(ids[i]).setAttribute("src","images/pic0"+num+".jpg");
 		num++;
 	}
