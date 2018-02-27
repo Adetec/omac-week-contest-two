@@ -1,15 +1,9 @@
 
 
+// declare css variables
 var getCssLink = document.getElementsByTagName("link")[0];
 var selectedTheme = getCssLink.getAttribute("href");
 
-// document.body.onload = function(){
-// 	if (document.cookie.length != 0) {
-// 		var cssLinkValue = getCssLink.setAttribute("href", document.cookie[0]);
-// 		cssLinkValue;
-// 	}
-	
-// }
 
 function getThemeCookie(){
 	if (document.cookie.length!=0) {
@@ -40,11 +34,11 @@ function setThemeCookie() {
 	console.log("Selected theme is "+selectedTheme);
 	if (selectedTheme == "css/mine.css") {
 		
-		document.cookie = "theme="+selectedTheme+";max-age="+(60*60*24*30)+";";
+		document.cookie = "theme="+selectedTheme+";max-age="+(60*60*24*30*24)+";";
 		console.log(document.cookie);
 	}
 	else{
-		document.cookie = "theme="+selectedTheme+";max-age="+(60*60*24*30)+";";
+		document.cookie = "theme="+selectedTheme+";max-age="+(60*60*24*30*24)+";";
 		console.log(document.cookie);
 	}
 	
@@ -75,20 +69,6 @@ function scrollProg() {
   var scrolled = (scroll / height) * 100;
   document.getElementById("scrollPr").style.width = scrolled + "%";
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 const ids =["plage", "jungle", "pic04", "pic05", "pic06","pic07"];
