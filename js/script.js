@@ -86,6 +86,7 @@ function changeTheme() {
 		document.getElementById(ids[i]).setAttribute("src","images/pic0"+num+"-2.jpg");
 		num++;
 	}
+	document.getElementById('palette').setAttribute("src","images/palette-blue.svg");
 }
 
 //retablir l'original...
@@ -100,7 +101,7 @@ function reset() {
 		document.getElementById(ids[i]).setAttribute("src","images/pic0"+num+".jpg");
 		num++;
 	}
-
+		document.getElementById('palette').setAttribute("src","images/palette.svg");
 }
 
 
