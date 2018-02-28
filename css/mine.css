@@ -492,7 +492,7 @@ footer a:hover{
 #settings{
 	display: block;
 	position: fixed;
-	right:0;
+	left:0;
 	top: 50%;
 	width: 15%;
 	height: 5%;
